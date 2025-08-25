@@ -114,28 +114,22 @@ const certifications = [
     badge: 'AWS'
   },
   {
-    name: 'AWS Developer - Associate',
+    name: 'AWS Cloud Practitioner',
     issuer: 'Amazon Web Services',
     year: '2023',
     badge: 'AWS'
   },
   {
-    name: 'AWS DevOps Engineer - Professional',
-    issuer: 'Amazon Web Services',
-    year: '2022',
-    badge: 'AWS'
-  },
-  {
-    name: 'React Developer Certification',
+    name: 'Professional Foundations Certificate',
     issuer: 'Meta',
     year: '2023',
-    badge: 'React'
+    badge: 'META'
   },
   {
-    name: 'Node.js Developer Certification',
-    issuer: 'OpenJS Foundation',
-    year: '2022',
-    badge: 'Node'
+    name: 'Specializations Certificate',
+    issuer: 'Meta',
+    year: '2023',
+    badge: 'META'
   }
 ];
 

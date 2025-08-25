@@ -6,6 +6,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
 import { Button } from '@/components/ui/Button';
 import { ArrowRight, Play, Star, Zap, Shield, Globe, Code, Cloud } from 'lucide-react';
+import Link from 'next/link';
 
 export function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -152,14 +153,18 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12"
         >
-          <Button size="lg" className="group">
-            View My Work
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          <Button variant="outline" size="lg" className="group">
-            <Play className="w-5 h-5 mr-2" />
-            Download Resume
-          </Button>
+          <Link href="/projects">
+            <Button size="lg" className="group">
+              View My Work
+              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
+          <Link href="/resume">
+            <Button variant="outline" size="lg" className="group">
+              <Play className="w-5 h-5 mr-2" />
+              Download Resume
+            </Button>
+          </Link>
         </motion.div>
 
         {/* Skills */}
@@ -191,9 +196,9 @@ export function HeroSection() {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto"
         >
           {[
-            { number: '5+', label: 'Years Experience' },
-            { number: '50+', label: 'Projects Delivered' },
-            { number: '15+', label: 'AWS Services' },
+            { number: '3.5', label: 'Years Experience' },
+            { number: '15', label: 'Projects Delivered' },
+            { number: '2', label: 'AWS Certifications' },
             { number: '99%', label: 'Client Satisfaction' },
           ].map((stat, index) => (
             <motion.div

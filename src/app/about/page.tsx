@@ -36,25 +36,25 @@ export default function AboutPage() {
 
   const experience = [
     {
-      year: '2023 - Present',
-      title: 'Senior Software Engineer',
-      company: 'Tech Company',
-      description: 'Leading full-stack development initiatives, architecting scalable solutions, and mentoring junior developers.',
-      technologies: ['React', 'Node.js', 'AWS', 'Docker', 'Kubernetes']
+      year: 'Oct 2023 - Present',
+      title: 'Full Stack Developer',
+      company: 'Ethiocube Systems',
+      description: 'Developing end-to-end web applications, implementing both frontend and backend solutions, and collaborating with cross-functional teams.',
+      technologies: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'AWS']
     },
     {
-      year: '2021 - 2023',
-      title: 'AWS Solutions Architect',
-      company: 'Cloud Solutions Inc.',
-      description: 'Designed and implemented cloud-native applications, managed infrastructure, and optimized costs.',
-      technologies: ['AWS', 'Lambda', 'ECS', 'RDS', 'CloudFormation']
+      year: 'May 2022 - Sep 2023',
+      title: 'Backend Developer',
+      company: 'Ethiocube Systems',
+      description: 'Built robust backend services, designed APIs, managed databases, and implemented server-side logic for web applications.',
+      technologies: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs']
     },
     {
-      year: '2019 - 2021',
-      title: 'Full-Stack Developer',
-      company: 'Startup XYZ',
-      description: 'Built responsive web applications, implemented CI/CD pipelines, and collaborated with cross-functional teams.',
-      technologies: ['JavaScript', 'Python', 'PostgreSQL', 'Redis', 'Git']
+      year: 'Mar 2021 - Apr 2022',
+      title: 'Junior Frontend Developer',
+      company: 'Taamcab Technology Solutions',
+      description: 'Developed responsive user interfaces, implemented frontend features, and collaborated with design and backend teams.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git']
     },
   ];
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-secondary-600 dark:text-secondary-400">
                 <p>
-                  With over 5 years of experience in software development, I've had the privilege 
+                  With 3.5 years of experience in software development, I've had the privilege 
                   of working on diverse projects that have shaped my expertise in full-stack 
                   development and cloud architecture.
                 </p>
@@ -122,19 +122,19 @@ export default function AboutPage() {
                 <div className="flex items-center space-x-3">
                   <Award className="w-5 h-5 text-primary-600" />
                   <span className="text-secondary-600 dark:text-secondary-400">
-                    <strong>15+ AWS Certifications</strong> including Solutions Architect
+                    <strong>2 AWS Certifications</strong> including Solutions Architect
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="w-5 h-5 text-primary-600" />
                   <span className="text-secondary-600 dark:text-secondary-400">
-                    <strong>5+ Years</strong> of professional experience
+                    <strong>3.5 Years</strong> of professional experience
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Star className="w-5 h-5 text-primary-600" />
                   <span className="text-secondary-600 dark:text-secondary-400">
-                    <strong>50+ Projects</strong> successfully delivered
+                    <strong>15 Projects</strong> successfully delivered
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">

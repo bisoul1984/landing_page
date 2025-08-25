@@ -8,17 +8,17 @@ import { Users, Globe, Zap, Shield, Code, Award, Clock, Star } from 'lucide-reac
 const stats = [
   {
     icon: Code,
-    number: 500000,
+    number: 10000,
     suffix: '+',
     label: 'Lines of Code',
     description: 'Clean, maintainable code across multiple projects',
   },
   {
     icon: Award,
-    number: 15,
-    suffix: '+',
+    number: 2,
+    suffix: '',
     label: 'AWS Certifications',
-    description: 'Solutions Architect, Developer, and DevOps certified',
+    description: 'Solutions Architect and Developer certified',
   },
   {
     icon: Zap,
@@ -29,15 +29,15 @@ const stats = [
   },
   {
     icon: Clock,
-    number: 2000,
-    suffix: '+',
-    label: 'Hours of Development',
-    description: 'Dedicated to building exceptional solutions',
+    number: 3.5,
+    suffix: ' Years',
+    label: 'Work Experience',
+    description: 'Professional software development experience',
   },
   {
     icon: Star,
-    number: 50,
-    suffix: '+',
+    number: 15,
+    suffix: '',
     label: 'Projects Completed',
     description: 'From startups to enterprise solutions',
   },

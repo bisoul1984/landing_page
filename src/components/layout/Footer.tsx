@@ -28,8 +28,8 @@ const footerLinks = {
     { name: 'System Design', href: '/services/system-design' },
   ],
   resources: [
-    { name: 'GitHub', href: 'https://github.com/yourusername', external: true },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', external: true },
+    { name: 'GitHub', href: 'https://github.com/WondwossenH9', external: true },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/wondwossen-tekle', external: true },
     { name: 'AWS Certifications', href: '/certifications' },
     { name: 'Contact', href: '/contact' },
   ],
@@ -37,9 +37,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', icon: Linkedin },
-  { name: 'GitHub', href: 'https://github.com/yourusername', icon: Github },
-  { name: 'Twitter', href: 'https://twitter.com/yourusername', icon: Twitter },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/wondwossen-tekle', icon: Linkedin },
+  { name: 'GitHub', href: 'https://github.com/WondwossenH9', icon: Github },
+  { name: 'Twitter', href: 'https://www.x.com/WondwossenHail8', icon: Twitter },
 ];
 
 export function Footer() {
