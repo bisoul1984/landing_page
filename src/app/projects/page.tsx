@@ -17,6 +17,17 @@ import Link from 'next/link';
 const projects = [
   {
     id: 1,
+    title: 'SkillLink - Skill Swapping Marketplace',
+    description: 'A marketplace for skill swapping. Learn something new while teaching what you know best. A full-stack application deployed on AWS with modern web technologies.',
+    image: '/projects/skilllink.jpg',
+    technologies: ['React', 'Next.js', 'AWS', 'Full-Stack', 'Marketplace'],
+    category: 'Full-Stack',
+    github: null,
+    live: 'http://skilllink-frontend-dev-1756645526.s3-website-us-east-1.amazonaws.com/',
+    featured: true
+  },
+  {
+    id: 2,
     title: 'Nafis Reflexology',
     description: 'A modern wellness website for Nafis Reflexology services. Features a clean, professional design with smooth animations and responsive layout for optimal user experience.',
     image: '/projects/nafis-reflexology.jpg',
@@ -27,7 +38,7 @@ const projects = [
     featured: true
   },
   {
-    id: 2,
+    id: 3,
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce platform built with React, Node.js, and AWS. Features include user authentication, payment processing, inventory management, and real-time analytics.',
     image: '/projects/ecommerce.jpg',
@@ -38,7 +49,7 @@ const projects = [
     featured: true
   },
   {
-    id: 3,
+    id: 4,
     title: 'Cloud-Native Microservices',
     description: 'Scalable microservices architecture using AWS ECS, API Gateway, and Lambda. Implements event-driven architecture with SQS and SNS for reliable message processing.',
     image: '/projects/microservices.jpg',
@@ -49,7 +60,7 @@ const projects = [
     featured: true
   },
   {
-    id: 4,
+    id: 5,
     title: 'Real-Time Dashboard',
     description: 'Interactive dashboard for monitoring system performance and user analytics. Built with React, WebSocket connections, and real-time data visualization.',
     image: '/projects/dashboard.jpg',
@@ -60,7 +71,7 @@ const projects = [
     featured: false
   },
   {
-    id: 5,
+    id: 6,
     title: 'Serverless API',
     description: 'RESTful API built with AWS Lambda and API Gateway. Features authentication, rate limiting, and automatic scaling based on demand.',
     image: '/projects/api.jpg',
@@ -71,7 +82,7 @@ const projects = [
     featured: false
   },
   {
-    id: 6,
+    id: 7,
     title: 'DevOps Pipeline',
     description: 'Complete CI/CD pipeline using GitHub Actions, Docker, and AWS. Automated testing, building, and deployment to multiple environments.',
     image: '/projects/devops.jpg',
@@ -82,7 +93,7 @@ const projects = [
     featured: false
   },
   {
-    id: 7,
+    id: 8,
     title: 'Mobile PWA',
     description: 'Progressive Web App with offline capabilities and push notifications. Optimized for mobile devices with responsive design.',
     image: '/projects/pwa.jpg',
