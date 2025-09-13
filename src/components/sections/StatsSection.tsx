@@ -14,13 +14,6 @@ const stats = [
     description: 'Clean, maintainable code across multiple projects',
   },
   {
-    icon: Award,
-    number: 2,
-    suffix: '',
-    label: 'AWS Certifications',
-    description: 'Solutions Architect and Developer certified',
-  },
-  {
     icon: Zap,
     number: 99.9,
     suffix: '%',
@@ -29,8 +22,8 @@ const stats = [
   },
   {
     icon: Clock,
-    number: 3.5,
-    suffix: ' Years',
+    number: 7,
+    suffix: '+ Years',
     label: 'Work Experience',
     description: 'Professional software development experience',
   },
@@ -57,7 +50,7 @@ export function StatsSection() {
   });
 
   return (
-    <section className="section bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+    <section className="section bg-gradient-to-r from-black to-gray-800 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -71,7 +64,7 @@ export function StatsSection() {
           </h2>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
             Quantifying the impact and experience gained through years of 
-            software engineering and AWS architecture work.
+            software engineering and full-stack development work.
           </p>
         </motion.div>
 

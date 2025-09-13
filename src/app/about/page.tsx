@@ -10,11 +10,7 @@ import {
   Zap, 
   Globe, 
   Server, 
-  Cpu,
-  Award,
-  Clock,
-  Star,
-  Users
+  Cpu
 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
@@ -27,56 +23,53 @@ export default function AboutPage() {
 
   const skills = [
     { icon: Code, name: 'Full-Stack Development', level: 95 },
-    { icon: Cloud, name: 'AWS Architecture', level: 90 },
-    { icon: Database, name: 'Database Design', level: 85 },
-    { icon: Shield, name: 'Security & DevOps', level: 88 },
-    { icon: Zap, name: 'Performance Optimization', level: 82 },
-    { icon: Globe, name: 'Microservices', level: 87 },
+    { icon: Cloud, name: 'Cloud Solutions', level: 90 },
+    { icon: Database, name: 'Database Design', level: 88 },
+    { icon: Shield, name: 'Security & Compliance', level: 85 },
+    { icon: Zap, name: 'Performance Optimization', level: 92 },
+    { icon: Globe, name: 'API Development', level: 90 },
+    { icon: Server, name: 'DevOps & Deployment', level: 87 },
+    { icon: Cpu, name: 'System Architecture', level: 89 },
   ];
 
   const experience = [
     {
-      year: 'Oct 2023 - Present',
-      title: 'Full Stack Developer',
-      company: 'Ethiocube Systems',
-      description: 'Developing end-to-end web applications, implementing both frontend and backend solutions, and collaborating with cross-functional teams.',
-      technologies: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'AWS']
+      title: 'Senior Software Developer',
+      company: 'EthioCube Systems',
+      period: '2021 - Current',
+      description: 'Leading development of enterprise applications and finance modules.',
+      technologies: ['Python', '.NET', 'JavaScript', 'React', 'PostgreSQL']
     },
     {
-      year: 'May 2022 - Sep 2023',
-      title: 'Backend Developer',
-      company: 'Ethiocube Systems',
-      description: 'Built robust backend services, designed APIs, managed databases, and implemented server-side logic for web applications.',
-      technologies: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs']
+      title: 'Back End Developer',
+      company: 'Ethiopian Agricultural Transformation Agency',
+      period: '2018 - 2020',
+      description: 'Built scalable backend systems and APIs for agricultural data management.',
+      technologies: ['Node.js', 'Django', 'MongoDB', 'AWS', 'GraphQL']
     },
     {
-      year: 'Mar 2021 - Apr 2022',
-      title: 'Junior Frontend Developer',
-      company: 'Taamcab Technology Solutions',
-      description: 'Developed responsive user interfaces, implemented frontend features, and collaborated with design and backend teams.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git']
-    },
+      title: 'Front End Developer',
+      company: 'Libanos Furniture PLC',
+      period: '2017 - 2018',
+      description: 'Developed responsive user interfaces and improved user experience.',
+      technologies: ['React', 'HTML', 'CSS', 'JavaScript', 'Bootstrap']
+    }
   ];
 
   return (
-    <div className="min-h-screen bg-secondary-50 dark:bg-secondary-900">
+    <div className="min-h-screen bg-white dark:bg-black">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-600 to-accent-600 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-black dark:to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
+          <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               About Me
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              Passionate software engineer and AWS solutions architect with a focus on 
-              building scalable, cloud-native applications that drive business value.
+              Passionate software engineer and full-stack developer with a focus on 
+              building scalable, modern applications that drive business value.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -84,153 +77,134 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-3xl font-bold text-foreground mb-6">
-                My Journey in Software Engineering
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">
+                My Journey in Software Development
               </h2>
               <div className="space-y-4 text-secondary-600 dark:text-secondary-400">
                 <p>
-                  With 3.5 years of experience in software development, I've had the privilege 
-                  of working on diverse projects that have shaped my expertise in full-stack 
-                  development and cloud architecture.
+                  With over 7 years of experience in software development, I've had the privilege 
+                  of working across various industries and technologies. My journey began with 
+                  frontend development, where I learned the importance of user experience and 
+                  responsive design.
                 </p>
                 <p>
-                  My passion lies in creating robust, scalable solutions that not only meet 
-                  current requirements but also anticipate future growth. I specialize in 
-                  AWS cloud services, microservices architecture, and modern web technologies.
+                  As I progressed in my career, I expanded into backend development, learning 
+                  about scalable architectures, database design, and API development. This 
+                  full-stack experience has given me a comprehensive understanding of how 
+                  modern web applications work from end to end.
                 </p>
                 <p>
-                  Throughout my career, I've collaborated with cross-functional teams, 
-                  mentored junior developers, and delivered solutions that have positively 
-                  impacted thousands of users.
+                  Today, I specialize in building enterprise-grade applications, with particular 
+                  expertise in finance modules, microservices architecture, and cloud solutions. 
+                  I'm passionate about writing clean, maintainable code and following best 
+                  practices in software development.
                 </p>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg"
-            >
-              <h3 className="text-xl font-semibold text-foreground mb-6">Quick Facts</h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Award className="w-5 h-5 text-primary-600" />
-                  <span className="text-secondary-600 dark:text-secondary-400">
-                    <strong>2 AWS Certifications</strong> including Solutions Architect
-                  </span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Clock className="w-5 h-5 text-primary-600" />
-                  <span className="text-secondary-600 dark:text-secondary-400">
-                    <strong>3.5 Years</strong> of professional experience
-                  </span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Star className="w-5 h-5 text-primary-600" />
-                  <span className="text-secondary-600 dark:text-secondary-400">
-                    <strong>15 Projects</strong> successfully delivered
-                  </span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Users className="w-5 h-5 text-primary-600" />
-                  <span className="text-secondary-600 dark:text-secondary-400">
-                    <strong>25+ Happy Clients</strong> across various industries
-                  </span>
-                </div>
+            <div className="space-y-6">
+              <div className="bg-gray-50 dark:bg-gray-900 rounded-xl p-6">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">
+                  What I Do Best
+                </h3>
+                <ul className="space-y-3 text-secondary-600 dark:text-secondary-400">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                    Full-stack web application development
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                    Enterprise software architecture
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                    API design and development
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                    Database optimization and design
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                    Performance optimization
+                  </li>
+                </ul>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="py-16 bg-white dark:bg-secondary-800">
+      <section className="py-16 bg-gray-100 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
+          <div ref={ref} className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
               Technical Expertise
             </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              My skills span across the full software development lifecycle, 
+            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
+              My skills span across the entire development stack, 
               from frontend development to cloud infrastructure.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skill, index) => (
-              <motion.div
+              <div
                 key={skill.name}
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-secondary-50 dark:bg-secondary-700 rounded-xl p-6"
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="flex items-center space-x-3 mb-4">
-                  <skill.icon className="w-6 h-6 text-primary-600" />
-                  <h3 className="text-lg font-semibold text-foreground">{skill.name}</h3>
+                <div className="flex items-center mb-4">
+                  <skill.icon className="w-8 h-8 text-primary-500 mr-3" />
+                  <h3 className="text-lg font-semibold text-foreground">
+                    {skill.name}
+                  </h3>
                 </div>
                 <div className="w-full bg-secondary-200 dark:bg-secondary-600 rounded-full h-2">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    animate={inView ? { width: `${skill.level}%` } : {}}
-                    transition={{ duration: 1, delay: index * 0.1 + 0.5 }}
-                    className="bg-gradient-to-r from-primary-500 to-accent-500 h-2 rounded-full"
+                  <div
+                    className="bg-gradient-to-r from-primary-500 to-accent-500 h-2 rounded-full transition-all duration-1000 ease-out"
+                    style={{ width: inView ? `${skill.level}%` : '0%' }}
                   />
                 </div>
                 <p className="text-sm text-secondary-600 dark:text-secondary-400 mt-2">
                   {skill.level}% proficiency
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Experience Section */}
+      {/* Experience Timeline */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
               Professional Experience
             </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
               A timeline of my career progression and key achievements.
             </p>
-          </motion.div>
+          </div>
 
           <div className="space-y-8">
             {experience.map((job, index) => (
-              <motion.div
+              <div
                 key={job.title}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg"
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground">{job.title}</h3>
-                    <p className="text-primary-600 font-medium">{job.company}</p>
+                    <h3 className="text-xl font-semibold text-foreground">
+                      {job.title}
+                    </h3>
+                    <p className="text-primary-500 font-medium">
+                      {job.company}
+                    </p>
                   </div>
-                  <span className="text-secondary-600 dark:text-secondary-400 font-medium">
-                    {job.year}
+                  <span className="text-secondary-600 dark:text-secondary-400 text-sm mt-2 md:mt-0">
+                    {job.period}
                   </span>
                 </div>
                 <p className="text-secondary-600 dark:text-secondary-400 mb-4">
@@ -240,48 +214,44 @@ export default function AboutPage() {
                   {job.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full text-sm"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-black to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h2 className="text-3xl font-bold mb-6">
               Ready to Work Together?
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
               Let's discuss how I can help bring your ideas to life with 
-              cutting-edge technology and scalable solutions.
+              cutting-edge technology and innovative solutions.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50">
+                <Button size="lg" className="w-full sm:w-auto">
                   Get In Touch
                 </Button>
               </Link>
               <Link href="/projects">
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary-600">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto">
                   View My Work
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>
   );
-} 
+}

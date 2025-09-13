@@ -3,13 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTheme } from 'next-themes';
 import { useSession, signOut } from 'next-auth/react';
 import {
   Menu,
   X,
-  Sun,
-  Moon,
   Globe,
   ChevronDown,
   User,
@@ -70,9 +67,9 @@ export function Header() {
             >
               <Link href="/" className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">W</span>
+                  <span className="text-white font-bold text-lg">B</span>
                 </div>
-                <span className="text-xl font-bold text-foreground">Wondwossen Hailu</span>
+                <span className="text-xl font-bold text-foreground">Bisrate Tadesse</span>
               </Link>
             </motion.div>
 
@@ -97,6 +94,7 @@ export function Header() {
 
             {/* Desktop Actions */}
             <div className="hidden lg:flex items-center space-x-4">
+
 
 
 

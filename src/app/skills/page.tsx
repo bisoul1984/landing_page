@@ -11,126 +11,110 @@ import {
   Globe, 
   Server, 
   Cpu,
-  GitBranch,
-  Lock,
-  BarChart3,
-  Smartphone,
-  Circle,
-  Square,
-  Hexagon,
-  Package,
-  Layers,
-  FileCode,
-  FileText,
-  FileCode2
+  Git,
+  Docker,
+  React,
+  Node,
+  Python,
+  Javascript
 } from 'lucide-react';
+import { Button } from '@/components/ui/Button';
+import Link from 'next/link';
 
 const skillCategories = [
   {
-    name: 'Frontend Development',
+    title: 'Programming Languages',
+    description: 'Core languages I use for development',
     icon: Code,
-    color: 'from-blue-500 to-cyan-500',
+    color: 'from-blue-500 to-blue-600',
     skills: [
-      { name: 'React', level: 95, icon: Circle },
-      { name: 'TypeScript', level: 90, icon: FileCode },
-      { name: 'Next.js', level: 88, icon: Code },
-      { name: 'HTML/CSS', level: 92, icon: Code },
-      { name: 'Tailwind CSS', level: 85, icon: Code },
-      { name: 'JavaScript', level: 93, icon: Code },
+      { name: 'Python', level: 95, description: 'Backend development, data processing, automation' },
+      { name: 'JavaScript', level: 90, description: 'Frontend and backend development, full-stack solutions' },
+      { name: 'TypeScript', level: 85, description: 'Type-safe JavaScript development' },
+      { name: 'C#', level: 80, description: '.NET applications and enterprise solutions' },
+      { name: 'SQL', level: 88, description: 'Database design, optimization, and complex queries' }
     ]
   },
   {
-    name: 'Backend Development',
+    title: 'Frontend Technologies',
+    description: 'Modern frontend frameworks and tools',
+    icon: Globe,
+    color: 'from-green-500 to-green-600',
+    skills: [
+      { name: 'React', level: 92, description: 'Component-based UI development' },
+      { name: 'Next.js', level: 88, description: 'Full-stack React applications' },
+      { name: 'HTML5', level: 95, description: 'Semantic markup and accessibility' },
+      { name: 'CSS3', level: 90, description: 'Styling, animations, and responsive design' },
+      { name: 'Tailwind CSS', level: 85, description: 'Utility-first CSS framework' }
+    ]
+  },
+  {
+    title: 'Backend Technologies',
+    description: 'Server-side development and APIs',
     icon: Server,
-    color: 'from-green-500 to-emerald-500',
+    color: 'from-purple-500 to-purple-600',
     skills: [
-      { name: 'Node.js', level: 90, icon: Square },
-      { name: 'Python', level: 85, icon: FileText },
-      { name: 'Java', level: 80, icon: FileCode2 },
-      { name: 'Express.js', level: 88, icon: Server },
-      { name: 'REST APIs', level: 92, icon: Server },
-      { name: 'GraphQL', level: 75, icon: Server },
+      { name: 'Node.js', level: 90, description: 'JavaScript runtime for backend development' },
+      { name: 'Django', level: 85, description: 'Python web framework' },
+      { name: '.NET', level: 80, description: 'Microsoft development platform' },
+      { name: 'Express.js', level: 88, description: 'Node.js web framework' },
+      { name: 'FastAPI', level: 82, description: 'Modern Python API framework' }
     ]
   },
   {
-    name: 'Cloud & AWS',
-    icon: Cloud,
-    color: 'from-orange-500 to-red-500',
-    skills: [
-      { name: 'AWS EC2', level: 90, icon: Cloud },
-      { name: 'AWS Lambda', level: 88, icon: Cloud },
-      { name: 'AWS S3', level: 92, icon: Cloud },
-      { name: 'AWS RDS', level: 85, icon: Cloud },
-      { name: 'AWS ECS', level: 87, icon: Cloud },
-      { name: 'CloudFormation', level: 82, icon: Cloud },
-    ]
-  },
-  {
-    name: 'Database & Storage',
+    title: 'Database Technologies',
+    description: 'Data storage and management solutions',
     icon: Database,
-    color: 'from-purple-500 to-pink-500',
+    color: 'from-orange-500 to-orange-600',
     skills: [
-      { name: 'PostgreSQL', level: 88, icon: Database },
-      { name: 'MongoDB', level: 85, icon: Database },
-      { name: 'DynamoDB', level: 80, icon: Database },
-      { name: 'Redis', level: 82, icon: Database },
-      { name: 'MySQL', level: 85, icon: Database },
-      { name: 'Data Modeling', level: 90, icon: Database },
+      { name: 'PostgreSQL', level: 90, description: 'Relational database management' },
+      { name: 'MongoDB', level: 85, description: 'NoSQL document database' },
+      { name: 'SQL Server', level: 80, description: 'Microsoft database platform' },
+      { name: 'Redis', level: 75, description: 'In-memory data structure store' },
+      { name: 'MySQL', level: 82, description: 'Open-source relational database' }
     ]
   },
   {
-    name: 'DevOps & Tools',
-    icon: Shield,
-    color: 'from-indigo-500 to-purple-500',
+    title: 'Cloud & DevOps',
+    description: 'Cloud platforms and deployment tools',
+    icon: Cloud,
+    color: 'from-cyan-500 to-cyan-600',
     skills: [
-      { name: 'Docker', level: 88, icon: Package },
-      { name: 'Kubernetes', level: 75, icon: Layers },
-      { name: 'Git', level: 92, icon: GitBranch },
-      { name: 'CI/CD', level: 85, icon: Shield },
-      { name: 'Terraform', level: 80, icon: Shield },
-      { name: 'Monitoring', level: 83, icon: BarChart3 },
+      { name: 'AWS', level: 85, description: 'Amazon Web Services cloud platform' },
+      { name: 'Docker', level: 80, description: 'Containerization platform' },
+      { name: 'Git', level: 92, description: 'Version control and collaboration' },
+      { name: 'CI/CD', level: 75, description: 'Continuous integration and deployment' },
+      { name: 'Linux', level: 78, description: 'Unix-like operating system' }
     ]
   },
   {
-    name: 'Architecture & Design',
-    icon: Cpu,
-    color: 'from-teal-500 to-cyan-500',
+    title: 'Tools & Frameworks',
+    description: 'Development tools and frameworks',
+    icon: Zap,
+    color: 'from-pink-500 to-pink-600',
     skills: [
-      { name: 'Microservices', level: 87, icon: Globe },
-      { name: 'System Design', level: 85, icon: Cpu },
-      { name: 'API Design', level: 90, icon: Server },
-      { name: 'Scalability', level: 88, icon: Zap },
-      { name: 'Security', level: 85, icon: Lock },
-      { name: 'Performance', level: 82, icon: Zap },
+      { name: 'GraphQL', level: 80, description: 'Query language for APIs' },
+      { name: 'REST APIs', level: 90, description: 'Representational state transfer' },
+      { name: 'Microservices', level: 85, description: 'Distributed system architecture' },
+      { name: 'JWT', level: 88, description: 'JSON Web Token authentication' },
+      { name: 'OAuth2', level: 82, description: 'Authorization framework' }
     ]
   }
 ];
 
-const certifications = [
-  {
-    name: 'AWS Solutions Architect - Associate',
-    issuer: 'Amazon Web Services',
-    year: '2023',
-    badge: 'AWS'
-  },
-  {
-    name: 'AWS Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    year: '2023',
-    badge: 'AWS'
-  },
-  {
-    name: 'Professional Foundations Certificate',
-    issuer: 'Meta',
-    year: '2023',
-    badge: 'META'
-  },
-  {
-    name: 'Specializations Certificate',
-    issuer: 'Meta',
-    year: '2023',
-    badge: 'META'
-  }
+const additionalSkills = [
+  { name: 'Financial Systems', icon: Shield },
+  { name: 'Performance Optimization', icon: Zap },
+  { name: 'System Architecture', icon: Cpu },
+  { name: 'API Design', icon: Globe },
+  { name: 'Database Optimization', icon: Database },
+  { name: 'Security Implementation', icon: Shield },
+  { name: 'Code Review', icon: Code },
+  { name: 'Technical Documentation', icon: Globe },
+  { name: 'Agile Development', icon: Zap },
+  { name: 'Team Leadership', icon: Server },
+  { name: 'Problem Solving', icon: Cpu },
+  { name: 'Continuous Learning', icon: Code }
 ];
 
 export default function SkillsPage() {
@@ -139,205 +123,145 @@ export default function SkillsPage() {
     threshold: 0.1,
   });
 
+  const [additionalSkillsRef, additionalSkillsInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <div className="min-h-screen bg-secondary-50 dark:bg-secondary-900">
+    <div className="min-h-screen bg-white dark:bg-black">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-600 to-accent-600 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-black dark:to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
+          <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               Technical Skills
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              Comprehensive expertise across the full software development stack, 
-              from frontend frameworks to cloud infrastructure and DevOps practices.
+              Comprehensive expertise across the full technology stack, from frontend development 
+              to backend systems, cloud infrastructure, and modern development practices.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Skills Overview */}
+      {/* Skills Categories */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Skills Overview
+          <div ref={ref} className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
+              Core Competencies
             </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              My technical expertise spans across multiple domains, enabling me to 
-              deliver end-to-end solutions for complex business requirements.
+            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
+              My skills span across multiple domains, enabling me to deliver 
+              end-to-end solutions for complex technical challenges.
             </p>
-          </motion.div>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {skillCategories.map((category, index) => (
-              <motion.div
-                key={category.name}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              <div
+                key={category.title}
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className={`w-16 h-16 bg-gradient-to-r ${category.color} rounded-2xl flex items-center justify-center mb-6`}>
-                  <category.icon className="w-8 h-8 text-white" />
+                <div className="flex items-center mb-6">
+                  <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${category.color} flex items-center justify-center mr-4`}>
+                    <category.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground">
+                      {category.title}
+                    </h3>
+                    <p className="text-secondary-600 dark:text-secondary-400 text-sm">
+                      {category.description}
+                    </p>
+                  </div>
                 </div>
-                
-                <h3 className="text-xl font-bold text-foreground mb-6">{category.name}</h3>
-                
+
                 <div className="space-y-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skill.name}>
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
-                        <span className="text-sm text-secondary-600 dark:text-secondary-400">{skill.level}%</span>
+                  {category.skills.map((skill) => (
+                    <div key={skill.name} className="space-y-2">
+                      <div className="flex justify-between items-center">
+                        <span className="font-medium text-foreground">
+                          {skill.name}
+                        </span>
+                        <span className="text-sm text-secondary-600 dark:text-secondary-400">
+                          {skill.level}%
+                        </span>
                       </div>
                       <div className="w-full bg-secondary-200 dark:bg-secondary-600 rounded-full h-2">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={inView ? { width: `${skill.level}%` } : {}}
-                          transition={{ duration: 1, delay: index * 0.1 + skillIndex * 0.1 }}
-                          className={`bg-gradient-to-r ${category.color} h-2 rounded-full`}
+                        <div
+                          className={`bg-gradient-to-r ${category.color} h-2 rounded-full transition-all duration-1000 ease-out`}
+                          style={{ width: inView ? `${skill.level}%` : '0%' }}
                         />
                       </div>
+                      <p className="text-xs text-secondary-600 dark:text-secondary-400">
+                        {skill.description}
+                      </p>
                     </div>
                   ))}
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Certifications */}
-      <section className="py-16 bg-white dark:bg-secondary-800">
+      {/* Additional Skills & Tools */}
+      <section className="py-16 bg-gray-100 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Certifications & Achievements
-            </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              Industry-recognized certifications that validate my expertise 
-              in cloud computing and modern development practices.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={cert.name}
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-secondary-50 dark:bg-secondary-700 rounded-xl p-6 border border-secondary-200 dark:border-secondary-600"
-              >
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
-                    <span className="text-primary-600 dark:text-primary-400 font-bold text-lg">
-                      {cert.badge}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">{cert.name}</h3>
-                    <p className="text-sm text-secondary-600 dark:text-secondary-400">{cert.issuer}</p>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-secondary-600 dark:text-secondary-400">
-                    Issued {cert.year}
-                  </span>
-                  <span className="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">
-                    Active
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Skills */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
+          <div ref={additionalSkillsRef} className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
               Additional Skills & Tools
             </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              A comprehensive toolkit of technologies and methodologies I use 
-              to deliver exceptional software solutions.
+            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
+              Specialized skills and tools that enhance my development capabilities 
+              and enable me to deliver high-quality solutions.
             </p>
-          </motion.div>
+          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {[
-              'GitHub', 'GitLab', 'Bitbucket', 'Jira', 'Confluence', 'Slack',
-              'Postman', 'Insomnia', 'VS Code', 'IntelliJ', 'Eclipse', 'WebStorm',
-              'Chrome DevTools', 'Firebase', 'Vercel', 'Netlify', 'Heroku',
-              'Jenkins', 'CircleCI', 'Travis CI', 'SonarQube', 'Sentry',
-              'Grafana', 'Prometheus', 'ELK Stack', 'New Relic', 'Datadog',
-              'Swagger', 'OpenAPI', 'Jest', 'Cypress', 'Selenium', 'Postman'
-            ].map((tool, index) => (
-              <motion.div
-                key={tool}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={inView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                className="bg-white dark:bg-secondary-800 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow duration-300"
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {additionalSkills.map((skill, index) => (
+              <div
+                key={skill.name}
+                className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 text-center"
               >
-                <span className="text-sm font-medium text-foreground">{tool}</span>
-              </motion.div>
+                <skill.icon className="w-8 h-8 text-primary-500 mx-auto mb-2" />
+                <span className="text-sm font-medium text-foreground">
+                  {skill.name}
+                </span>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-black to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h2 className="text-3xl font-bold mb-6">
               Ready to Leverage These Skills?
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss how my technical expertise can help solve 
-              your business challenges and drive innovation.
+              Let's discuss how my technical expertise can help solve your 
+              development challenges and bring your ideas to life.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-              <a href="/contact" className="btn btn-primary bg-white text-primary-600 hover:bg-primary-50">
-                Start a Project
-              </a>
-              <a href="/projects" className="btn btn-outline border-white text-white hover:bg-white hover:text-primary-600">
-                View My Work
-              </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact">
+                <Button size="lg" className="w-full sm:w-auto">
+                  Start a Project
+                </Button>
+              </Link>
+              <Link href="/experience">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                  View Experience
+                </Button>
+              </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>
   );
-} 
+}

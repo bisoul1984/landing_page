@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function MigrationPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black py-16 px-4">
       <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-10 border border-white/20">
         <h1 className="text-4xl font-bold text-white mb-6">Cloud Migration Services</h1>
         <p className="text-lg text-gray-300 mb-6">
@@ -22,7 +22,7 @@ export default function MigrationPage() {
         </ul>
         <div className="mt-8">
           <Link href="/contact">
-            <span className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300">
+            <span className="inline-block px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-800 text-white rounded-lg font-semibold hover:from-gray-600 hover:to-gray-700 transition-all duration-300">
               Contact Me for Migration Consulting
             </span>
           </Link>

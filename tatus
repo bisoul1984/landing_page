@@ -1,0 +1,5 @@
+[33me707ac8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix Vercel deployment issues - Replace non-existent lucide-react icons with valid alternatives
+[33mabf4104[m Add SkillLink project to projects page - AWS deployed full-stack marketplace for skill swapping
+[33mc633f2c[m Update website content and functionality: - Updated statistics (projects: 15, experience: 3.5 years, AWS certs: 2, code lines: 10,000) - Fixed hero section links (View My Work, Download Resume) - Updated social media links in footer - Added Nafis Reflexology project - Created experience and resume pages - Updated education details (Bachelor of Art, 2010) - Removed All Projects section - Fixed certification display and downloads
+[33md605d18[m Add AWS deployment configuration and documentation
+[33m57ff36e[m Initial commit

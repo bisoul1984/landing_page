@@ -1,240 +1,255 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  ExternalLink, 
-  Github, 
-  Globe, 
-  Code, 
-  Cloud, 
-  Database,
-  Shield,
-  Zap
-} from 'lucide-react';
+import { ExternalLink, Github, Calendar, Tag } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 
 const projects = [
   {
     id: 1,
-    title: 'SkillLink - Skill Swapping Marketplace',
-    description: 'A marketplace for skill swapping. Learn something new while teaching what you know best. A full-stack application deployed on AWS with modern web technologies.',
-    image: '/projects/skilllink.jpg',
-    technologies: ['React', 'Next.js', 'AWS', 'Full-Stack', 'Marketplace'],
+    title: 'Community Finance App',
+    description: 'Innovative microfinance platform designed to empower communities through accessible financial services, loan management, and financial inclusion solutions.',
+    image: '/images/projects/community-finance.jpg',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'Express.js', 'Tailwind CSS'],
     category: 'Full-Stack',
-    github: null,
-    live: 'http://skilllink-frontend-dev-1756645526.s3-website-us-east-1.amazonaws.com/',
-    featured: true
+    status: 'Live',
+    liveUrl: 'https://bisrat-microloan.netlify.app/',
+    githubUrl: '#',
+    date: '2024',
+    features: [
+      'Loan application and management system',
+      'Community-based financial services',
+      'Real-time transaction tracking',
+      'Mobile-responsive design',
+      'Secure payment processing'
+    ]
   },
   {
     id: 2,
-    title: 'Nafis Reflexology',
-    description: 'A modern wellness website for Nafis Reflexology services. Features a clean, professional design with smooth animations and responsive layout for optimal user experience.',
-    image: '/projects/nafis-reflexology.jpg',
-    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-    category: 'Frontend',
-    github: null,
-    live: 'https://nafis-sand.vercel.app/',
-    featured: true
+    title: 'AI Powered Career Mentor App',
+    description: 'Intelligent career guidance platform leveraging artificial intelligence to provide personalized career advice, skill recommendations, and professional development pathways.',
+    image: '/images/projects/ai-career-mentor.jpg',
+    technologies: ['Next.js', 'Python', 'OpenAI API', 'MongoDB', 'TypeScript'],
+    category: 'AI/ML',
+    status: 'Live',
+    liveUrl: 'https://ai-powered-career-mentor-assistant-4kdjifuzx.vercel.app/',
+    githubUrl: '#',
+    date: '2024',
+    features: [
+      'AI-powered career recommendations',
+      'Skill gap analysis',
+      'Personalized learning paths',
+      'Industry insights and trends',
+      'Interactive career planning tools'
+    ]
   },
   {
     id: 3,
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform built with React, Node.js, and AWS. Features include user authentication, payment processing, inventory management, and real-time analytics.',
-    image: '/projects/ecommerce.jpg',
-    technologies: ['React', 'Node.js', 'AWS', 'Stripe', 'MongoDB'],
-    category: 'Full-Stack',
-    github: 'https://github.com/yourusername/ecommerce-platform',
-    live: 'https://ecommerce-demo.com',
-    featured: true
-  },
-  {
-    id: 4,
-    title: 'Cloud-Native Microservices',
-    description: 'Scalable microservices architecture using AWS ECS, API Gateway, and Lambda. Implements event-driven architecture with SQS and SNS for reliable message processing.',
-    image: '/projects/microservices.jpg',
-    technologies: ['AWS ECS', 'Lambda', 'API Gateway', 'SQS', 'DynamoDB'],
-    category: 'Cloud Architecture',
-    github: 'https://github.com/yourusername/microservices',
-    live: 'https://api-demo.com',
-    featured: true
-  },
-  {
-    id: 5,
-    title: 'Real-Time Dashboard',
-    description: 'Interactive dashboard for monitoring system performance and user analytics. Built with React, WebSocket connections, and real-time data visualization.',
-    image: '/projects/dashboard.jpg',
-    technologies: ['React', 'WebSocket', 'Chart.js', 'Node.js', 'Redis'],
-    category: 'Frontend',
-    github: 'https://github.com/yourusername/dashboard',
-    live: 'https://dashboard-demo.com',
-    featured: false
-  },
-  {
-    id: 6,
-    title: 'Serverless API',
-    description: 'RESTful API built with AWS Lambda and API Gateway. Features authentication, rate limiting, and automatic scaling based on demand.',
-    image: '/projects/api.jpg',
-    technologies: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'Cognito', 'CloudWatch'],
-    category: 'Backend',
-    github: 'https://github.com/yourusername/serverless-api',
-    live: 'https://api-docs.com',
-    featured: false
-  },
-  {
-    id: 7,
-    title: 'DevOps Pipeline',
-    description: 'Complete CI/CD pipeline using GitHub Actions, Docker, and AWS. Automated testing, building, and deployment to multiple environments.',
-    image: '/projects/devops.jpg',
-    technologies: ['GitHub Actions', 'Docker', 'AWS ECS', 'Terraform', 'CloudWatch'],
-    category: 'DevOps',
-    github: 'https://github.com/yourusername/devops-pipeline',
-    live: null,
-    featured: false
-  },
-  {
-    id: 8,
-    title: 'Mobile PWA',
-    description: 'Progressive Web App with offline capabilities and push notifications. Optimized for mobile devices with responsive design.',
-    image: '/projects/pwa.jpg',
-    technologies: ['React', 'PWA', 'Service Workers', 'IndexedDB', 'Push API'],
+    title: 'Neighborhood Safety Alert App',
+    description: 'Community-driven safety platform enabling real-time neighborhood alerts, incident reporting, and emergency notifications to enhance local security and community awareness.',
+    image: '/images/projects/safety-alert.jpg',
+    technologies: ['React', 'Firebase', 'Google Maps API', 'PWA', 'JavaScript'],
     category: 'Mobile',
-    github: 'https://github.com/yourusername/mobile-pwa',
-    live: 'https://pwa-demo.com',
-    featured: false
+    status: 'Live',
+    liveUrl: 'https://neighborhood-safety-alert-system-c8.vercel.app/',
+    githubUrl: '#',
+    date: '2024',
+    features: [
+      'Real-time incident reporting',
+      'Community alert system',
+      'Location-based notifications',
+      'Emergency contact integration',
+      'Safety tips and resources'
+    ]
   }
 ];
 
-const categories = ['All', 'Full-Stack', 'Cloud Architecture', 'Frontend', 'Backend', 'DevOps', 'Mobile'];
+const categories = ['All', 'Full-Stack', 'AI/ML', 'Frontend', 'Backend', 'DevOps', 'Mobile'];
 
 export default function ProjectsPage() {
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  const filteredProjects = selectedCategory === 'All' 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory);
+
   return (
-    <div className="min-h-screen bg-secondary-50 dark:bg-secondary-900">
+    <div className="min-h-screen bg-white dark:bg-black">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-600 to-accent-600 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-black dark:to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
+          <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
               My Projects
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              A showcase of my work, featuring full-stack applications, 
-              cloud-native solutions, and innovative web experiences.
+              A showcase of my recent work, featuring full-stack applications, 
+              AI-powered solutions, and community-focused platforms that demonstrate 
+              my technical expertise and problem-solving abilities.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Featured Projects */}
-      <section className="py-16">
+      {/* Filter Section */}
+      <section className="py-8 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Featured Projects
-            </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              Highlighted work that demonstrates my expertise in modern web development 
-              and cloud architecture.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {projects.filter(project => project.featured).map((project, index) => (
-              <motion.div
-                key={project.id}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="bg-white dark:bg-secondary-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+          <div className="flex flex-wrap justify-center gap-4">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+                  selectedCategory === category
+                    ? 'bg-primary-500 text-white'
+                    : 'bg-white dark:bg-gray-800 text-secondary-600 dark:text-secondary-400 hover:bg-primary-100 dark:hover:bg-primary-900'
+                }`}
               >
-                <div className="h-48 bg-gradient-to-br from-primary-100 to-accent-100 dark:from-primary-900 dark:to-accent-900 flex items-center justify-center">
-                  <div className="text-center">
-                    <Code className="w-16 h-16 text-primary-600 dark:text-primary-400 mx-auto mb-4" />
-                    <p className="text-secondary-600 dark:text-secondary-400 font-medium">
-                      {project.title}
-                    </p>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium">
-                      {project.category}
-                    </span>
-                    <div className="flex space-x-2">
-                      {project.github && (
-                        <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                          <Button variant="ghost" size="sm" className="p-2">
-                            <Github className="w-4 h-4" />
-                          </Button>
-                        </Link>
-                      )}
-                      {project.live && (
-                        <Link href={project.live} target="_blank" rel="noopener noreferrer">
-                          <Button variant="ghost" size="sm" className="p-2">
-                            <ExternalLink className="w-4 h-4" />
-                          </Button>
-                        </Link>
-                      )}
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {project.title}
-                  </h3>
-                  <p className="text-secondary-600 dark:text-secondary-400 mb-4">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-1 bg-secondary-100 dark:bg-secondary-700 text-secondary-700 dark:text-secondary-300 rounded text-xs font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
+                {category}
+              </button>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Projects Grid */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {filteredProjects.map((project, index) => (
+              <div
+                key={project.id}
+                className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+              >
+                {/* Project Image */}
+                <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-900">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Tag className="w-8 h-8" />
+                      </div>
+                      <p className="text-sm opacity-80">{project.category}</p>
+                    </div>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                      project.status === 'Live' 
+                        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
+                        : 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200'
+                    }`}>
+                      {project.status}
+                    </span>
+                  </div>
+                </div>
 
+                {/* Project Content */}
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="text-xl font-semibold text-foreground">
+                      {project.title}
+                    </h3>
+                    <span className="flex items-center text-sm text-secondary-600 dark:text-secondary-400">
+                      <Calendar className="w-4 h-4 mr-1" />
+                      {project.date}
+                    </span>
+                  </div>
+
+                  <p className="text-secondary-600 dark:text-secondary-400 mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
+
+                  {/* Features */}
+                  <div className="mb-4">
+                    <h4 className="text-sm font-medium text-foreground mb-2">Key Features:</h4>
+                    <ul className="text-xs text-secondary-600 dark:text-secondary-400 space-y-1">
+                      {project.features.slice(0, 3).map((feature, idx) => (
+                        <li key={idx} className="flex items-center">
+                          <div className="w-1 h-1 bg-primary-500 rounded-full mr-2"></div>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Technologies */}
+                  <div className="mb-6">
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded text-xs font-medium"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="flex gap-3">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center justify-center"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </a>
+                    {project.githubUrl !== '#' && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-2 border border-secondary-300 dark:border-secondary-600 text-secondary-700 dark:text-secondary-300 rounded-lg text-sm font-medium hover:bg-secondary-50 dark:hover:bg-secondary-800 transition-colors duration-200 flex items-center justify-center"
+                      >
+                        <Github className="w-4 h-4" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {filteredProjects.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-secondary-600 dark:text-secondary-400 text-lg">
+                No projects found in this category.
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-black to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h2 className="text-3xl font-bold mb-6">
-              Have a Project in Mind?
+              Interested in Working Together?
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Let's collaborate to bring your ideas to life with cutting-edge 
-              technology and innovative solutions.
+              I'm always excited to take on new challenges and create innovative solutions. 
+              Let's discuss how we can bring your ideas to life.
             </p>
-            <Link href="/contact">
-              <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50">
-                Start a Project
-              </Button>
-            </Link>
-          </motion.div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact">
+                <Button size="lg" className="w-full sm:w-auto">
+                  Start a Project
+                </Button>
+              </Link>
+              <Link href="/skills">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                  View My Skills
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   );
-} 
+}

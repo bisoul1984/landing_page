@@ -10,14 +10,14 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Wondwossen Hailu - Software Engineer & AWS Solutions Architect',
-    template: '%s | Wondwossen Hailu'
+    default: 'Bisrate Tadesse - Software Engineer & Full-Stack Developer',
+    template: '%s | Bisrate Tadesse'
   },
-  description: 'Experienced Software Engineer and AWS Solutions Architect specializing in cloud-native applications, microservices architecture, and scalable solutions. Portfolio showcasing full-stack development and AWS expertise.',
+  description: 'Experienced Software Engineer and Full-Stack Developer specializing in modern web applications, microservices architecture, and scalable solutions. Portfolio showcasing full-stack development expertise.',
   keywords: [
     'software engineer',
-    'AWS solutions architect',
-    'cloud architecture',
+    'full-stack developer',
+    'software architecture',
     'full-stack development',
     'microservices',
     'serverless',
@@ -26,18 +26,18 @@ export const metadata: Metadata = {
     'React',
     'Node.js',
     'TypeScript',
-    'AWS',
-    'cloud computing'
+    'modern web technologies',
+    'software development'
   ],
-  authors: [{ name: 'Wondwossen Hailu' }],
-  creator: 'Wondwossen Hailu',
-  publisher: 'Wondwossen Hailu',
+  authors: [{ name: 'Bisrate Tadesse' }],
+  creator: 'Bisrate Tadesse',
+  publisher: 'Bisrate Tadesse',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://wondwossen.com'),
+  metadataBase: new URL('https://bisratetadesse.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -52,25 +52,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://wondwossen.com',
-    title: 'Wondwossen Hailu - Software Engineer & AWS Solutions Architect',
-    description: 'Experienced Software Engineer and AWS Solutions Architect specializing in cloud-native applications, microservices architecture, and scalable solutions.',
-    siteName: 'Wondwossen Hailu Portfolio',
+    url: 'https://bisratetadesse.com',
+    title: 'Bisrate Tadesse - Software Engineer & Full-Stack Developer',
+    description: 'Experienced Software Engineer and Full-Stack Developer specializing in modern web applications, microservices architecture, and scalable solutions.',
+    siteName: 'Bisrate Tadesse Portfolio',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Wondwossen Hailu - Software Engineer & AWS Solutions Architect',
+        alt: 'Bisrate Tadesse - Software Engineer & Full-Stack Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Wondwossen Hailu - Software Engineer & AWS Solutions Architect',
-    description: 'Experienced Software Engineer and AWS Solutions Architect specializing in cloud-native applications, microservices architecture, and scalable solutions.',
+    title: 'Bisrate Tadesse - Software Engineer & Full-Stack Developer',
+    description: 'Experienced Software Engineer and Full-Stack Developer specializing in modern web applications, microservices architecture, and scalable solutions.',
     images: ['/og-image.jpg'],
-    creator: '@wondwossen',
+    creator: '@bisratetadesse',
   },
   robots: {
     index: true,
@@ -101,12 +101,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#3b82f6" />
+        <meta name="theme-color" content="#0ea5e9" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Wondwossen Hailu Portfolio" />
-        <meta name="msapplication-TileColor" content="#3b82f6" />
+        <meta name="apple-mobile-web-app-title" content="Bisrate Tadesse Portfolio" />
+        <meta name="msapplication-TileColor" content="#0ea5e9" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
       <body className={inter.className}>

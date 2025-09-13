@@ -20,72 +20,68 @@ import Link from 'next/link';
 const experience = [
   {
     id: 1,
-    title: 'Full Stack Developer',
-    company: 'Ethiocube Systems',
+    title: 'Senior Software Developer',
+    company: 'EthioCube Systems',
     location: 'Addis Ababa, Ethiopia',
-    period: 'October 2023 - Present',
-    duration: '1+ years',
-    description: 'Leading end-to-end development of web applications, implementing robust APIs, and collaborating with cross-functional teams to deliver scalable solutions.',
+    period: 'January 2021 - Current',
+    duration: '3+ years',
+    description: 'Leading development of finance modules and enterprise applications, optimizing system performance, and delivering scalable solutions for financial operations.',
     achievements: [
-      'Developed and maintained full-stack web applications using modern technologies',
-      'Implemented RESTful APIs and microservices architecture',
-      'Collaborated with designers and product managers to deliver user-centric solutions',
-      'Optimized application performance and database queries',
-      'Mentored junior developers and conducted code reviews'
+      'Built and optimized finance modules in CubeHCM and CubeORM, reducing system response time by 30% and enhancing financial data processing efficiency',
+      'Developed and maintained high-performance server-side applications using Python and .NET, improving transaction stability and backend reliability by 40%',
+      'Designed and deployed intuitive, finance-focused interfaces in JavaScript, increasing user adoption and engagement by 25% for reporting and dashboards',
+      'Integrated multiple financial front-end and back-end systems, boosting API response time by 50% and ensuring seamless data flow across accounting and HR platforms',
+      'Collaborated with finance and operations teams to deliver scalable, enterprise-grade applications, accelerating development cycles by 20%',
+      'Led troubleshooting and system optimization efforts, reducing downtime in critical financial operations by 35%',
+      'Introduced and deployed new financial features, improving software adoption, compliance tracking, and user retention by 15%'
     ],
-    technologies: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'AWS', 'Docker', 'Git'],
-    category: 'Full-Stack',
-    icon: Code,
-    featured: true
+    technologies: ['Python', '.NET', 'JavaScript', 'React', 'PostgreSQL', 'SQL Server', 'REST APIs', 'Microservices', 'Docker', 'Git']
   },
   {
     id: 2,
-    title: 'Backend Developer',
-    company: 'Ethiocube Systems',
+    title: 'Back End Developer',
+    company: 'Ethiopian Agricultural Transformation Agency',
     location: 'Addis Ababa, Ethiopia',
-    period: 'May 2022 - September 2023',
-    duration: '1.5 years',
-    description: 'Built robust backend services and APIs, managed database integrations, and optimized server performance for enterprise applications.',
+    period: 'August 2018 - December 2020',
+    duration: '2+ years',
+    description: 'Developed scalable backend systems and APIs for agricultural data management, focusing on performance optimization and data integrity.',
     achievements: [
-      'Designed and implemented scalable backend architectures',
-      'Developed RESTful APIs and GraphQL endpoints',
-      'Managed database design, optimization, and migrations',
-      'Implemented authentication and authorization systems',
-      'Integrated third-party services and payment gateways'
+      'Designed and developed scalable RESTful and GraphQL APIs using Node.js and Django, improving data retrieval speed by 45%',
+      'Optimized database queries and schema design in SQL and MongoDB, reducing query execution time by 35% and enhancing overall system performance',
+      'Implemented secure authentication and authorization systems (JWT, OAuth2), strengthening data protection and compliance',
+      'Built and maintained microservices architectures, increasing application modularity and reducing deployment risks by 30%',
+      'Collaborated with frontend developers and product teams to deliver robust backend solutions, accelerating feature delivery by 20%',
+      'Integrated third-party APIs and cloud services, enabling seamless functionality and expanding product capabilities'
     ],
-    technologies: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Redis', 'REST APIs', 'JWT'],
-    category: 'Backend',
-    icon: Server,
-    featured: true
+    technologies: ['Node.js', 'Django', 'Python', 'MongoDB', 'PostgreSQL', 'GraphQL', 'JWT', 'OAuth2', 'AWS', 'Docker', 'Redis']
   },
   {
     id: 3,
-    title: 'Junior Frontend Developer',
-    company: 'Taamcab Technology Solutions',
+    title: 'Front End Developer',
+    company: 'Libanos Furniture PLC',
     location: 'Addis Ababa, Ethiopia',
-    period: 'March 2021 - April 2022',
-    duration: '1.2 years',
-    description: 'Developed responsive user interfaces, implemented new features, and contributed to front-end architecture and best practices.',
+    period: 'August 2017 - February 2018',
+    duration: '6 months',
+    description: 'Developed responsive user interfaces and improved user experience for furniture e-commerce platform.',
     achievements: [
-      'Built responsive and accessible user interfaces',
-      'Implemented modern UI/UX designs and interactions',
-      'Optimized frontend performance and loading times',
-      'Collaborated with backend developers for API integration',
-      'Maintained and refactored existing codebase'
+      'Developed responsive, mobile-first user interfaces with React.js, improving cross-device compatibility and boosting user engagement by 30%',
+      'Implemented reusable UI components with React and modern CSS frameworks, accelerating development speed by 25%',
+      'Collaborated with designers and backend developers to ensure seamless integration of APIs, improving data accuracy and user experience',
+      'Led cross-browser testing and debugging efforts, ensuring consistent performance across Chrome, Firefox, Safari, and Edge',
+      'Enhanced accessibility and usability following WCAG standards, expanding reach to a broader user base',
+      'Implemented secure client-side features, including form validation and safe API consumption, strengthening application reliability'
     ],
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Responsive Design'],
-    category: 'Frontend',
-    icon: Globe,
-    featured: false
+    technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'REST APIs', 'Git', 'Responsive Design', 'WCAG', 'Cross-browser Testing']
   }
 ];
 
 const skills = [
-  { name: 'Frontend Development', level: 90, icon: Globe },
-  { name: 'Backend Development', level: 85, icon: Server },
-  { name: 'Cloud Architecture', level: 80, icon: Cloud },
-  { name: 'Database Design', level: 85, icon: Database },
-  { name: 'DevOps & CI/CD', level: 75, icon: Zap },
+  { category: 'Programming Languages', items: ['Python', 'JavaScript', 'TypeScript', 'C#', 'SQL'] },
+  { category: 'Frontend Technologies', items: ['React', 'Next.js', 'HTML5', 'CSS3', 'Tailwind CSS'] },
+  { category: 'Backend Technologies', items: ['Node.js', 'Django', '.NET', 'Express.js', 'FastAPI'] },
+  { category: 'Databases', items: ['PostgreSQL', 'MongoDB', 'SQL Server', 'Redis', 'MySQL'] },
+  { category: 'Cloud & DevOps', items: ['AWS', 'Docker', 'Git', 'CI/CD', 'Linux'] },
+  { category: 'Tools & Frameworks', items: ['GraphQL', 'REST APIs', 'Microservices', 'JWT', 'OAuth2'] }
 ];
 
 export default function ExperiencePage() {
@@ -95,218 +91,172 @@ export default function ExperiencePage() {
   });
 
   return (
-    <div className="min-h-screen bg-secondary-50 dark:bg-secondary-900">
+    <div className="min-h-screen bg-white dark:bg-black">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-600 to-accent-600 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-black dark:to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
+          <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              Work Experience
+              Professional Experience
             </h1>
             <p className="text-xl text-primary-100 max-w-3xl mx-auto">
-              My professional journey in software development, from junior frontend developer 
-              to full-stack engineer, specializing in modern web technologies and cloud solutions.
+              My professional journey in software development, from frontend developer to senior software developer, 
+              specializing in finance modules, enterprise applications, and scalable backend systems across multiple industries.
             </p>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Experience Timeline */}
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            ref={ref}
-            initial={{ opacity: 0, y: 30 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Professional Journey
-            </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              Over 3.5 years of experience building scalable applications and delivering 
-              innovative solutions across different technology stacks.
-            </p>
-          </motion.div>
-
-          <div className="space-y-8">
+          <div className="space-y-12">
             {experience.map((job, index) => (
-              <motion.div
+              <div
                 key={job.id}
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className={`relative ${
-                  job.featured 
-                    ? 'bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg border-l-4 border-primary-500' 
-                    : 'bg-secondary-50 dark:bg-secondary-700 rounded-xl p-6'
-                }`}
+                className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
-                  {/* Job Info */}
+                {/* Job Header */}
+                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                   <div className="flex-1">
-                    <div className="flex items-start space-x-4 mb-4">
-                      <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${
-                        job.featured 
-                          ? 'bg-primary-100 dark:bg-primary-900' 
-                          : 'bg-secondary-200 dark:bg-secondary-600'
-                      }`}>
-                        <job.icon className={`w-6 h-6 ${
-                          job.featured 
-                            ? 'text-primary-600 dark:text-primary-400' 
-                            : 'text-secondary-600 dark:text-secondary-400'
-                        }`} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className={`text-xl font-semibold mb-1 ${
-                          job.featured ? 'text-foreground' : 'text-foreground'
-                        }`}>
-                          {job.title}
-                        </h3>
-                        <div className="flex items-center space-x-4 text-secondary-600 dark:text-secondary-400 text-sm mb-2">
-                          <span className="flex items-center">
-                            <Briefcase className="w-4 h-4 mr-1" />
-                            {job.company}
-                          </span>
-                          <span className="flex items-center">
-                            <MapPin className="w-4 h-4 mr-1" />
-                            {job.location}
-                          </span>
-                        </div>
-                        <div className="flex items-center space-x-4 text-secondary-600 dark:text-secondary-400 text-sm">
-                          <span className="flex items-center">
-                            <Calendar className="w-4 h-4 mr-1" />
-                            {job.period}
-                          </span>
-                          <span className="px-2 py-1 bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full text-xs font-medium">
-                            {job.duration}
-                          </span>
-                        </div>
-                      </div>
+                    <div className="flex items-center mb-2">
+                      <Briefcase className="w-6 h-6 text-primary-500 mr-3" />
+                      <h2 className="text-2xl font-bold text-foreground">
+                        {job.title}
+                      </h2>
                     </div>
-
-                    <p className="text-secondary-600 dark:text-secondary-400 mb-4">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-primary-500 font-semibold mb-2">
+                      <span className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-1" />
+                        {job.company}
+                      </span>
+                      <span className="flex items-center">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {job.period}
+                      </span>
+                      <span className="text-secondary-600 dark:text-secondary-400">
+                        {job.duration}
+                      </span>
+                    </div>
+                    <p className="text-secondary-600 dark:text-secondary-400 text-lg">
                       {job.description}
                     </p>
-
-                    {/* Achievements */}
-                    <div className="mb-4">
-                      <h4 className="font-semibold text-foreground mb-2">Key Achievements:</h4>
-                      <ul className="space-y-1">
-                        {job.achievements.map((achievement, idx) => (
-                          <li key={idx} className="text-secondary-600 dark:text-secondary-400 text-sm flex items-start">
-                            <span className="w-1.5 h-1.5 bg-primary-500 rounded-full mt-2 mr-2 flex-shrink-0"></span>
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* Technologies */}
-                    <div className="flex flex-wrap gap-2">
-                      {job.technologies.map((tech) => (
-                        <span
-                          key={tech}
-                          className={`px-3 py-1 rounded-full text-xs font-medium ${
-                            job.featured
-                              ? 'bg-secondary-100 dark:bg-secondary-700 text-secondary-700 dark:text-secondary-300'
-                              : 'bg-white dark:bg-secondary-600 text-secondary-700 dark:text-secondary-300'
-                          }`}
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </div>
-              </motion.div>
+
+                {/* Achievements */}
+                <div className="mb-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center">
+                    <Zap className="w-5 h-5 text-accent-500 mr-2" />
+                    Key Achievements
+                  </h3>
+                  <ul className="space-y-3">
+                    {job.achievements.map((achievement, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                        <span className="text-secondary-600 dark:text-secondary-400">
+                          {achievement}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Technologies */}
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center">
+                    <Code className="w-5 h-5 text-primary-500 mr-2" />
+                    Technologies Used
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {job.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full text-sm font-medium"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="py-16 bg-white dark:bg-secondary-800">
+      <section className="py-16 bg-gray-100 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Technical Expertise
+          <div ref={ref} className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">
+              Technical Skills
             </h2>
-            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-3xl mx-auto">
-              Core competencies developed through hands-on experience and continuous learning.
+            <p className="text-xl text-secondary-600 dark:text-secondary-400 max-w-2xl mx-auto">
+              Comprehensive expertise across the full technology stack, 
+              from frontend development to backend systems and cloud infrastructure.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skills.map((skill, index) => (
-              <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-secondary-50 dark:bg-secondary-700 rounded-xl p-6"
+            {skills.map((skillGroup, index) => (
+              <div
+                key={skillGroup.category}
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
-                    <skill.icon className="w-5 h-5 text-primary-600 dark:text-primary-400" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-foreground">{skill.name}</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center">
+                  {skillGroup.category === 'Programming Languages' && <Code className="w-5 h-5 text-primary-500 mr-2" />}
+                  {skillGroup.category === 'Frontend Technologies' && <Globe className="w-5 h-5 text-primary-500 mr-2" />}
+                  {skillGroup.category === 'Backend Technologies' && <Server className="w-5 h-5 text-primary-500 mr-2" />}
+                  {skillGroup.category === 'Databases' && <Database className="w-5 h-5 text-primary-500 mr-2" />}
+                  {skillGroup.category === 'Cloud & DevOps' && <Cloud className="w-5 h-5 text-primary-500 mr-2" />}
+                  {skillGroup.category === 'Tools & Frameworks' && <Zap className="w-5 h-5 text-primary-500 mr-2" />}
+                  {skillGroup.category}
+                </h3>
+                <div className="space-y-2">
+                  {skillGroup.items.map((skill) => (
+                    <div
+                      key={skill}
+                      className="flex items-center justify-between p-2 bg-gray-50 dark:bg-gray-700 rounded-lg"
+                    >
+                      <span className="text-secondary-600 dark:text-secondary-400 font-medium">
+                        {skill}
+                      </span>
+                    </div>
+                  ))}
                 </div>
-                <div className="w-full bg-secondary-200 dark:bg-secondary-600 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-primary-500 to-accent-500 h-2 rounded-full transition-all duration-1000"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                <p className="text-secondary-600 dark:text-secondary-400 text-sm mt-2">
-                  {skill.level}% proficiency
-                </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+      <section className="py-16 bg-gradient-to-r from-black to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <h2 className="text-3xl font-bold mb-6">
               Ready to Work Together?
             </h2>
             <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss how my experience and skills can contribute to your next project.
+              Let's discuss how my experience can help bring your projects to life 
+              with scalable, high-performance solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact">
-                <Button size="lg" className="bg-white text-primary-600 hover:bg-primary-50">
+                <Button size="lg" className="w-full sm:w-auto">
                   Get In Touch
                 </Button>
               </Link>
-              <Link href="/resume">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary-600">
-                  View Resume
+              <Link href="/projects">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                  View My Work
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>
   );
-} 
+}

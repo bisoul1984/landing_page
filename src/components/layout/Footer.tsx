@@ -22,24 +22,23 @@ const footerLinks = {
   ],
   services: [
     { name: 'Full-Stack Development', href: '/services/fullstack' },
-    { name: 'AWS Architecture', href: '/services/aws' },
+    { name: 'Software Architecture', href: '/services/architecture' },
     { name: 'Cloud Migration', href: '/services/migration' },
     { name: 'DevOps Consulting', href: '/services/devops' },
     { name: 'System Design', href: '/services/system-design' },
   ],
   resources: [
-    { name: 'GitHub', href: 'https://github.com/WondwossenH9', external: true },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/wondwossen-tekle', external: true },
-    { name: 'AWS Certifications', href: '/certifications' },
+    { name: 'GitHub', href: 'https://github.com/bisratetadesse', external: true },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/bisrate-tadesse', external: true },
     { name: 'Contact', href: '/contact' },
   ],
 
 };
 
 const socialLinks = [
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/wondwossen-tekle', icon: Linkedin },
-  { name: 'GitHub', href: 'https://github.com/WondwossenH9', icon: Github },
-  { name: 'Twitter', href: 'https://www.x.com/WondwossenHail8', icon: Twitter },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/bisrate-tadesse', icon: Linkedin },
+  { name: 'GitHub', href: 'https://github.com/bisratetadesse', icon: Github },
+  { name: 'Twitter', href: 'https://www.x.com/bisratetadesse', icon: Twitter },
 ];
 
 export function Footer() {
@@ -59,12 +58,12 @@ export function Footer() {
             >
               <Link href="/" className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">W</span>
+                  <span className="text-white font-bold text-lg">B</span>
                 </div>
-                <span className="text-xl font-bold">Wondwossen Hailu</span>
+                <span className="text-xl font-bold">Bisrate Tadesse</span>
               </Link>
               <p className="text-secondary-300 mb-6 max-w-md">
-                Software Engineer & AWS Solutions Architect specializing in cloud-native applications, 
+                Software Engineer & Full-Stack Developer specializing in modern web applications, 
                 microservices architecture, and scalable solutions.
               </p>
               
@@ -72,11 +71,11 @@ export function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-secondary-300">
                   <Mail className="w-4 h-4" />
-                  <span>wondwossenhailu7@gmail.com</span>
+                  <span>bekutadesse@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-secondary-300">
                   <Phone className="w-4 h-4" />
-                  <span>+251913266990</span>
+                  <span>(+251) 952455990</span>
                 </div>
                 <div className="flex items-center space-x-3 text-secondary-300">
                   <MapPin className="w-4 h-4" />
@@ -206,7 +205,7 @@ export function Footer() {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="text-secondary-400 text-sm"
           >
-            © {currentYear} Wondwossen Hailu. All rights reserved.
+            © {currentYear} Bisrate Tadesse. All rights reserved.
           </motion.div>
 
 

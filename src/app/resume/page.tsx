@@ -22,109 +22,94 @@ import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 
 const personalInfo = {
-  name: 'Wondwossen Hailu',
-  title: 'Full Stack Developer & AWS Solutions Architect',
-  email: 'wondwossenhailu7@gmail.com',
-  phone: '+251913266990',
+  name: 'Bisrate Tadesse',
+  title: 'Full Stack Developer & Software Engineer',
+  email: 'bekutadesse@gmail.com',
+  phone: '(+251) 952455990',
   location: 'Addis Ababa, Ethiopia',
-  website: 'https://wondwossen.dev',
-  github: 'https://github.com/WondwossenH9',
-  linkedin: 'https://www.linkedin.com/in/wondwossen-tekle',
-  twitter: 'https://www.x.com/WondwossenHail8'
+  website: 'https://bisratetadesse.dev',
+  github: 'https://github.com/bisratetadesse',
+  linkedin: 'https://www.linkedin.com/in/bisrate-tadesse',
+  twitter: 'https://www.x.com/bisratetadesse'
 };
 
 const experience = [
   {
-    title: 'Full Stack Developer',
-    company: 'Ethiocube Systems',
+    title: 'Senior Software Developer',
+    company: 'EthioCube Systems',
     location: 'Addis Ababa, Ethiopia',
-    period: 'October 2023 - Present',
-    description: 'Leading end-to-end development of web applications, implementing robust APIs, and collaborating with cross-functional teams to deliver scalable solutions.',
+    period: 'January 2021 - Current',
+    description: 'Leading development of finance modules and enterprise applications, optimizing system performance, and delivering scalable solutions for financial operations.',
     achievements: [
-      'Developed and maintained full-stack web applications using React, Node.js, and TypeScript',
-      'Implemented RESTful APIs and microservices architecture for enterprise applications',
-      'Collaborated with designers and product managers to deliver user-centric solutions',
-      'Optimized application performance and database queries, improving load times by 40%',
-      'Mentored junior developers and conducted code reviews to maintain code quality',
-      'Integrated AWS services for cloud deployment and infrastructure management'
+      'Built and optimized finance modules in CubeHCM and CubeORM, reducing system response time by 30% and enhancing financial data processing efficiency',
+      'Developed and maintained high-performance server-side applications using Python and .NET, improving transaction stability and backend reliability by 40%',
+      'Designed and deployed intuitive, finance-focused interfaces in JavaScript, increasing user adoption and engagement by 25% for reporting and dashboards',
+      'Integrated multiple financial front-end and back-end systems, boosting API response time by 50% and ensuring seamless data flow across accounting and HR platforms',
+      'Collaborated with finance and operations teams to deliver scalable, enterprise-grade applications, accelerating development cycles by 20%',
+      'Led troubleshooting and system optimization efforts, reducing downtime in critical financial operations by 35%',
+      'Introduced and deployed new financial features, improving software adoption, compliance tracking, and user retention by 15%'
     ],
-    technologies: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'AWS', 'Docker', 'Git']
+    technologies: ['Python', '.NET', 'JavaScript', 'CubeHCM', 'CubeORM', 'Financial Systems', 'API Integration']
   },
   {
-    title: 'Backend Developer',
-    company: 'Ethiocube Systems',
+    title: 'Back End Developer',
+    company: 'Ethiopian Agricultural Transformation Agency',
     location: 'Addis Ababa, Ethiopia',
-    period: 'May 2022 - September 2023',
-    description: 'Built robust backend services and APIs, managed database integrations, and optimized server performance for enterprise applications.',
+    period: 'August 2018 - December 2020',
+    description: 'Designed and developed scalable backend systems, optimized database performance, and implemented secure authentication systems for agricultural transformation applications.',
     achievements: [
-      'Designed and implemented scalable backend architectures using Node.js and Express',
-      'Developed RESTful APIs and GraphQL endpoints serving 10,000+ daily requests',
-      'Managed database design, optimization, and migrations for PostgreSQL and MongoDB',
-      'Implemented authentication and authorization systems using JWT and OAuth2',
-      'Integrated third-party services and payment gateways (Stripe, PayPal)',
-      'Reduced API response times by 60% through database optimization and caching'
+      'Designed and developed scalable RESTful and GraphQL APIs using Node.js and Django, improving data retrieval speed by 45%',
+      'Optimized database queries and schema design in SQL and MongoDB, reducing query execution time by 35% and enhancing overall system performance',
+      'Implemented secure authentication and authorization systems (JWT, OAuth2), strengthening data protection and compliance',
+      'Built and maintained microservices architectures, increasing application modularity and reducing deployment risks by 30%',
+      'Collaborated with frontend developers and product teams to deliver robust backend solutions, accelerating feature delivery by 20%',
+      'Integrated third-party APIs and cloud services (AWS), enabling seamless functionality and expanding product capabilities'
     ],
-    technologies: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Redis', 'REST APIs', 'JWT']
+    technologies: ['Node.js', 'Django', 'RESTful APIs', 'GraphQL', 'SQL', 'MongoDB', 'JWT', 'OAuth2', 'AWS', 'Microservices']
   },
   {
-    title: 'Junior Frontend Developer',
-    company: 'Taamcab Technology Solutions',
+    title: 'Front End Developer',
+    company: 'Libanos Furniture PLC',
     location: 'Addis Ababa, Ethiopia',
-    period: 'March 2021 - April 2022',
-    description: 'Developed responsive user interfaces, implemented new features, and contributed to front-end architecture and best practices.',
+    period: 'August 2017 - February 2018',
+    description: 'Developed responsive, mobile-first user interfaces and implemented modern frontend technologies to enhance user experience and accessibility.',
     achievements: [
-      'Built responsive and accessible user interfaces using HTML, CSS, and JavaScript',
-      'Implemented modern UI/UX designs and interactions with React framework',
-      'Optimized frontend performance and loading times, improving user experience',
-      'Collaborated with backend developers for seamless API integration',
-      'Maintained and refactored existing codebase following best practices',
-      'Participated in agile development processes and sprint planning'
+      'Developed responsive, mobile-first user interfaces with React.js, improving cross-device compatibility and boosting user engagement by 30%',
+      'Implemented reusable UI components with React and modern CSS frameworks, accelerating development speed by 25%',
+      'Collaborated with designers and backend developers to ensure seamless integration of APIs, improving data accuracy and user experience',
+      'Led cross-browser testing and debugging efforts, ensuring consistent performance across Chrome, Firefox, Safari, and Edge',
+      'Enhanced accessibility and usability following WCAG standards, expanding reach to a broader user base',
+      'Implemented secure client-side features, including form validation and safe API consumption, strengthening application reliability'
     ],
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Responsive Design']
+    technologies: ['React.js', 'JavaScript', 'CSS3', 'Responsive Design', 'WCAG', 'Cross-browser Testing', 'API Integration']
   }
 ];
 
 const skills = {
-  'Frontend Development': ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Framer Motion'],
-  'Backend Development': ['Node.js', 'Express', 'REST APIs', 'GraphQL', 'JWT Authentication', 'OAuth2'],
-  'Database & Storage': ['PostgreSQL', 'MongoDB', 'Redis', 'Database Design', 'Data Modeling', 'Migrations'],
-  'Cloud & DevOps': ['AWS', 'Docker', 'CI/CD', 'Git', 'GitHub Actions', 'Cloud Architecture'],
-  'Tools & Platforms': ['VS Code', 'Postman', 'DBeaver', 'Figma', 'Jira', 'Slack']
+  'Frontend Development': ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Responsive Design', 'WCAG', 'Cross-browser Testing'],
+  'Backend Development': ['Python', '.NET', 'Node.js', 'Django', 'RESTful APIs', 'GraphQL', 'JWT', 'OAuth2'],
+  'Database & Storage': ['SQL', 'MongoDB', 'Database Design', 'Query Optimization', 'Data Modeling'],
+  'Financial Systems': ['CubeHCM', 'CubeORM', 'Financial Modules', 'API Integration', 'System Optimization'],
+  'Cloud & DevOps': ['AWS', 'Microservices', 'CI/CD', 'Git', 'System Architecture', 'Performance Optimization'],
+  'Tools & Platforms': ['VS Code', 'Postman', 'GitHub', 'Jira', 'Slack', 'Cross-browser Testing Tools']
 };
 
-const certifications = [
+
+const education = [
   {
-    name: 'AWS Certified Solutions Architect - Associate',
-    issuer: 'Amazon Web Services',
-    year: '2023',
-    credential: 'AWS-SAA-2023'
+    degree: 'MBA, Project Management',
+    institution: 'Sikkim Manipal University',
+    period: 'October 2018 - July 2020',
+    location: 'India',
+    website: 'https://smu.edu.in/'
   },
   {
-    name: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    year: '2023',
-    credential: 'AWS-CP-2023'
-  },
-  {
-    name: 'Professional Foundations Certificate',
-    issuer: 'Meta',
-    year: '2023',
-    credential: 'META-PF-2023'
-  },
-  {
-    name: 'Specializations Certificate',
-    issuer: 'Meta',
-    year: '2023',
-    credential: 'META-SP-2023'
+    degree: 'Computer Science',
+    institution: 'HiLCoE School of Computer Science and Technology',
+    period: 'September 2014 - July 2017',
+    location: 'Ethiopia'
   }
 ];
-
-const education = {
-  degree: 'Bachelor of Art in Management',
-  institution: 'Haromaya University',
-  year: '2010',
-  location: 'Haromaya, Ethiopia'
-};
 
 export default function ResumePage() {
   const handlePrint = () => {
@@ -132,9 +117,9 @@ export default function ResumePage() {
   };
 
   return (
-    <div className="min-h-screen bg-secondary-50 dark:bg-secondary-900">
+    <div className="min-h-screen bg-white dark:bg-black">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-primary-600 to-accent-600 text-white">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-gray-800 to-gray-600 dark:from-black dark:to-gray-800 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -181,7 +166,7 @@ export default function ResumePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg mb-8"
+              className="bg-gray-900 rounded-2xl p-8 shadow-lg mb-8"
             >
               <div className="text-center mb-6">
                 <h1 className="text-3xl font-bold text-foreground mb-2">
@@ -233,18 +218,18 @@ export default function ResumePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg mb-8"
+              className="bg-gray-900 rounded-2xl p-8 shadow-lg mb-8"
             >
               <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center">
                 <Briefcase className="w-6 h-6 mr-3 text-primary-600 dark:text-primary-400" />
                 Professional Summary
               </h2>
               <p className="text-secondary-600 dark:text-secondary-400 leading-relaxed">
-                Experienced Full Stack Developer with 3.5+ years of expertise in building scalable web applications 
-                and cloud-native solutions. Proficient in modern JavaScript frameworks, backend development, and 
-                AWS cloud services. Demonstrated ability to lead development teams, optimize application performance, 
-                and deliver high-quality software solutions. Passionate about continuous learning and staying current 
-                with emerging technologies.
+                Experienced Software Developer with 7+ years of expertise in building scalable enterprise applications, 
+                finance modules, and modern software solutions. Specialized in Python, .NET, JavaScript, and financial 
+                systems development. Demonstrated ability to optimize system performance, reduce response times by up to 50%, 
+                and deliver high-quality software solutions across multiple industries including finance, agriculture, and furniture. 
+                Passionate about continuous learning and staying current with emerging technologies.
               </p>
             </motion.div>
 
@@ -253,7 +238,7 @@ export default function ResumePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg mb-8"
+              className="bg-gray-900 rounded-2xl p-8 shadow-lg mb-8"
             >
               <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center">
                 <Code className="w-6 h-6 mr-3 text-primary-600 dark:text-primary-400" />
@@ -323,7 +308,7 @@ export default function ResumePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg mb-8"
+              className="bg-gray-900 rounded-2xl p-8 shadow-lg mb-8"
             >
               <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center">
                 <Server className="w-6 h-6 mr-3 text-primary-600 dark:text-primary-400" />
@@ -349,33 +334,6 @@ export default function ResumePage() {
               </div>
             </motion.div>
 
-            {/* Certifications */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-white dark:bg-secondary-800 rounded-2xl p-8 shadow-lg mb-8"
-            >
-              <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center">
-                <Award className="w-6 h-6 mr-3 text-primary-600 dark:text-primary-400" />
-                Certifications
-              </h2>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="border border-secondary-200 dark:border-secondary-700 rounded-lg p-4">
-                    <h3 className="font-semibold text-foreground mb-1">{cert.name}</h3>
-                    <p className="text-primary-600 dark:text-primary-400 text-sm mb-1">{cert.issuer}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-secondary-600 dark:text-secondary-400 text-sm">{cert.year}</span>
-                      <span className="text-xs text-secondary-500 dark:text-secondary-500 font-mono">
-                        {cert.credential}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
 
             {/* Education */}
             <motion.div
@@ -389,23 +347,40 @@ export default function ResumePage() {
                 Education
               </h2>
               
-              <div className="border-l-4 border-primary-500 pl-6">
-                <h3 className="text-xl font-semibold text-foreground mb-1">
-                  {education.degree}
-                </h3>
-                <p className="text-primary-600 dark:text-primary-400 font-medium mb-1">
-                  {education.institution}
-                </p>
-                <div className="flex items-center space-x-4 text-secondary-600 dark:text-secondary-400 text-sm">
-                  <span className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-1" />
-                    {education.year}
-                  </span>
-                  <span className="flex items-center">
-                    <MapPin className="w-4 h-4 mr-1" />
-                    {education.location}
-                  </span>
-                </div>
+              <div className="space-y-6">
+                {education.map((edu, index) => (
+                  <div key={index} className="border-l-4 border-primary-500 pl-6">
+                    <h3 className="text-xl font-semibold text-foreground mb-1">
+                      {edu.degree}
+                    </h3>
+                    <p className="text-primary-600 dark:text-primary-400 font-medium mb-1">
+                      {edu.institution}
+                    </p>
+                    <div className="flex items-center space-x-4 text-secondary-600 dark:text-secondary-400 text-sm">
+                      <span className="flex items-center">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {edu.period}
+                      </span>
+                      <span className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-1" />
+                        {edu.location}
+                      </span>
+                      {edu.website && (
+                        <span className="flex items-center">
+                          <Globe className="w-4 h-4 mr-1" />
+                          <a 
+                            href={edu.website} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary-600 dark:text-primary-400 hover:underline"
+                          >
+                            Website
+                          </a>
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
             </motion.div>
           </div>
