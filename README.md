@@ -2,7 +2,7 @@
 
 A cutting-edge, fully responsive website for high-tech companies built with Next.js, TypeScript, and modern web technologies. This project showcases enterprise-grade UX with interactive animations, AI-powered features, and a scalable architecture.
 
-## 🚀 Features
+## Features
 
 ### Core Features
 - **Interactive Landing Page** - 3D scroll-based transitions with Three.js and Framer Motion
@@ -27,7 +27,7 @@ A cutting-edge, fully responsive website for high-tech companies built with Next
 - **Accessibility** - WCAG 2.1 AA compliant with ARIA labels
 - **Performance** - Lighthouse score 95+ with optimized loading
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Next.js 14** - React framework with App Router
@@ -53,7 +53,7 @@ A cutting-edge, fully responsive website for high-tech companies built with Next
 - **Playwright** - E2E testing
 - **GitHub Actions** - CI/CD pipeline
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Node.js 18+ 
@@ -118,7 +118,7 @@ A cutting-edge, fully responsive website for high-tech companies built with Next
 6. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 src/
@@ -137,7 +137,7 @@ src/
 └── constants/            # App constants
 ```
 
-## 🎨 Design System
+## Design System
 
 ### Colors
 - **Primary**: Blue (#3B82F6) - Main brand color
@@ -160,7 +160,7 @@ src/
 - **Modals**: Reusable modal components
 - **Toasts**: Notification system
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 1. Connect your GitHub repository to Vercel
@@ -182,7 +182,7 @@ docker build -t techcorp-website .
 docker run -p 3000:3000 techcorp-website
 ```
 
-## 📊 Performance
+## Performance
 
 ### Lighthouse Scores
 - **Performance**: 95+
@@ -197,7 +197,7 @@ docker run -p 3000:3000 techcorp-website
 - **Caching**: Static generation and ISR
 - **CDN**: Global content delivery network
 
-## 🔧 Configuration
+## Configuration
 
 ### TailwindCSS
 Custom configuration with design tokens, animations, and responsive utilities.
@@ -208,7 +208,7 @@ Optimized for performance with custom webpack configuration and PWA support.
 ### TypeScript
 Strict mode enabled with custom type definitions and path mapping.
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests
 ```bash
@@ -225,7 +225,7 @@ npm run e2e
 npm run type-check
 ```
 
-## 📝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -239,18 +239,18 @@ npm run type-check
 - Follow ESLint rules
 - Write meaningful commit messages
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Support
+## Support
 
 - **Documentation**: [docs.techcorp.com](https://docs.techcorp.com)
 - **Issues**: [GitHub Issues](https://github.com/yourusername/techcorp-website/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/yourusername/techcorp-website/discussions)
 - **Email**: support@techcorp.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Next.js](https://nextjs.org/) - React framework
 - [TailwindCSS](https://tailwindcss.com/) - CSS framework
